@@ -420,7 +420,7 @@
   \setbool{isstart}{true}%
   \setlength{\tabcolsep}{.16667em}
   \setlength{\intextsep}{0.0mm}
-  \renewcommand*{\arraystretch}{1.0}
+  \renewcommand*{\arraystretch}{1.2}
   \begin{tabular}[h]{@{}c l@{}}
     \faMobile & \@mobile \\%
     \faMapMarker & \@addressSide \\%
