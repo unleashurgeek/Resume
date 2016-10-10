@@ -1,0 +1,85 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11t, letterpaper]{awesome-cv}
+\usepackage{svg}
+\usepackage{amsmath}
+
+% Configure page margins with geometry
+\geometry{left=6.3cm, top=.8cm, right=1.0cm, bottom=0.8cm, footskip=.5cm}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\definecolor{custom-color}{HTML}{0376b0}
+\colorlet{awesome}{awesome-skyblue}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Kyle}{Bartz}
+% \address{11317 Adobe Circle, Irvine, CA 92617}
+\addressSide{11317 Adobe Circle, Irvine, CA}
+\mobile{(530) 906-6127}
+\email{kyle@unleashurgeek.com}
+\github{UnleashurGeek}
+
+%%% Optionals
+% \position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+% \quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {}
+  {Kyle Bartz~~~·~~~Resume}
+
+\begin{document}
+\makeshortheader
+
+%%% Import contents
+\input{resume/side.tex}
+% \input{resume/education.tex}
+\input{resume/experience.tex}
+\input{resume/proficiencies.tex}
+
+\end{document}
