@@ -46,6 +46,7 @@
 %-------------------------------------------------------------------------------
 %                3rd party packages
 %-------------------------------------------------------------------------------
+\RequirePackage{graphicx}
 % Needed to make fixed length table
 \RequirePackage{array}
 % Needed to handle list environment
@@ -230,6 +231,8 @@
 \newcommand*{\sectionstyle}[1]{{\fontsize{20pt}{1em}\bodyfont\bfseries\scshape\color{text}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\scshape\textcolor{awesome}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{12pt}{1em}\bodyfontlight\upshape\color{text}}
+
+\newcommand*{\infostyle}{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\scshape\color{awesome} #1}}
@@ -422,10 +425,15 @@
   \setlength{\intextsep}{0.0mm}
   \renewcommand*{\arraystretch}{1.2}
   \begin{tabular}[h]{@{}c l@{}}
+    % \entrypositionstyle{Email}: & \entrydatestyle{\@email} \\%
+    % \entrypositionstyle{Phone}: & \entrydatestyle{\@mobile} \\%
+    % \entrypositionstyle{Github}: & \entrydatestyle{\href{https://github.com/\@github}{\@github}} \\%
+    % \entrypositionstyle{Street}: & \entrydatestyle{\@addressSide} \\%
+
+    \fontsize{3.8mm}{1em}{\faEnvelope} & \@email \\%
     \fontsize{4.51mm}{1em}{\faMobile} & \@mobile \\%
     \fontsize{4mm}{1em}{\faMapMarker} & \@addressSide \\%
-    \fontsize{4mm}{1em}{\faEnvelope} & \@email \\%
-    \fontsize{4mm}{1em}{\faGithubSquare} & \href{https://github.com/\@github}{\@github}\\%
+    \fontsize{4mm}{1em}{\faGithub} & \href{https://github.com/\@github}{\@github} \\%
   \end{tabular}
 }
 
