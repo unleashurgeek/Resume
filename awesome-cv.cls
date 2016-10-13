@@ -422,10 +422,10 @@
   \setlength{\intextsep}{0.0mm}
   \renewcommand*{\arraystretch}{1.2}
   \begin{tabular}[h]{@{}c l@{}}
-    \faMobile & \@mobile \\%
-    \faMapMarker & \@addressSide \\%
-    \faEnvelope & \@email \\%
-    \faGithubSquare & \href{https://github.com/\@github}{\@github}\\%
+    \fontsize{4.51mm}{1em}{\faMobile} & \@mobile \\%
+    \fontsize{4mm}{1em}{\faMapMarker} & \@addressSide \\%
+    \fontsize{4mm}{1em}{\faEnvelope} & \@email \\%
+    \fontsize{4mm}{1em}{\faGithubSquare} & \href{https://github.com/\@github}{\@github}\\%
   \end{tabular}
 }
 
