@@ -1,0 +1,41 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{deedy-resume-openfont} %11t, letterpaper?
+
+% Configure page margins with geometry
+\geometry{left=1.25cm, top=0.75cm, right=1.25cm, bottom=0.75cm}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{Kyle}{Bartz}
+\phone{(530) 906 -- 6127}% chktex 8
+\email{kbartz@uci.edu}
+\github{UnleashurGeek}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\gapheader{}
+
+% \setbool{HasColumn}{true}
+% \begin{column}
+%   \input{inputs/column.tex}
+% \end{column}
+\begin{main}
+  \vspace{-\SectionTopSkip}
+  \input{inputs/education.tex}
+  \input{inputs/skillsMultiList.tex}
+  \input{inputs/experience.tex}
+\end{main} 
+\end{document}
