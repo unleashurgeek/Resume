@@ -1,3 +1,25 @@
+% Deedy-awesome CV class file
+% 
+% This template has been downloaded from:
+% https://github.com/unleashurgeek/Resume
+% 
+% Author:
+% Kyle Bartz <kyle@unleashurgeek.com>
+% 
+% 
+% This theme is inspired by Awesome-CV and Deedy-Resume:
+% https://github.com/posquit0/Awesome-CV
+% https://github.com/deedy/Deedy-Resume
+% 
+% This class echos Awesome-CVs templated structure allowing the following
+% properties:
+% 1) This class file defines the structure and layout of the template file
+% 2) It has been written in such a way that under most circumstances you
+% should not need to edit it.
+% 
+% 
+
+
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
@@ -53,7 +75,6 @@
 % Needed to manage math fonts
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
-% (https://github.com/posquit0/latex-fontawesome)
 \RequirePackage{fontawesome}
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
@@ -121,19 +142,14 @@
 \definecolor{dark-blue}{HTML}{3298BA}
 \definecolor{dark-red}{HTML}{b71c1c}
 \definecolor{rip}{HTML}{ff60f4}
-\definecolor{test}{HTML}{2b2b2b}
 
 \colorlet{awesome}{dark-red}
 
+% Text colors
 \definecolor{darktext}{HTML}{414141}
 \colorlet{text}{darkgray}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
-
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
-\definecolor{headings}{HTML}{6A6A6A}
-\definecolor{subheadings}{HTML}{333333}
 
 %-------------------------------------------------------------------------------
 %                Configuration for fonts

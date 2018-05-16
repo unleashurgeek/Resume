@@ -1,12 +1,23 @@
 %!TEX program = xelatex
 %!TEX encoding = UTF-8 Unicode
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy-awesome CV class file
+% 
+% This template has been downloaded from:
+% https://github.com/unleashurgeek/Resume
+% 
+% Author:
+% Kyle Bartz <kyle@unleashurgeek.com>
+% 
+% 
+% This theme is inspired by Awesome-CV and Deedy-Resume:
+% https://github.com/posquit0/Awesome-CV
+% https://github.com/deedy/Deedy-Resume
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Configuration
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[]{deedly-awesome}
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, letterpaper]{deedly-awesome}
 
 % Configure page margins with geometry
 \geometry{left=1.25cm, top=0.75cm, right=1.25cm, bottom=0.75cm}
@@ -14,28 +25,52 @@
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Personal Data
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% Other Colors: dark-blue, dark-red, rip
+\colorlet{awesome}{dark-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Change the entry position separator to something else
+\renewcommand{\EntryInfoSep}{\quad\textbar\space}
+
+% Enables or disables having a side column
+\setbool{HasColumn}{false}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
 \name{Kyle}{Bartz}
 \phone{(530) 906 -- 6127}% chktex 8
 \email{kbartz@uci.edu}
 \github{UnleashurGeek}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Content
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------------------
 \begin{document}
+
+% Print the header containing personal information
 \gapheader{}
 
-% \setbool{HasColumn}{true}
-% \begin{column}
-%   \input{inputs/column.tex}
-% \end{column}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%-------------------------------------------------------------------------------
+\input{inputs/column.tex}
 \begin{main}
   \vspace{-\SectionTopSkip}
   \input{inputs/education.tex}
   \input{inputs/skillsMultiList.tex}
   \input{inputs/experience.tex}
-\end{main} 
+\end{main}
+
+
+%-------------------------------------------------------------------------------
 \end{document}

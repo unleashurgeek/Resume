@@ -16,6 +16,7 @@
         "skyblue",
         "Tasker",
         "templating",
+        "uncomment",
         "xelatex"
     ],
     // flagWords - list of words to be always considered incorrect
