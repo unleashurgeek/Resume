@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{deedy-resume-openfont}[2018/05/11 CV class]
+\ProvidesClass{deedly-awesome}[2018/05/11 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 
