@@ -200,6 +200,7 @@
 \newcommand*{\firstnamestyle}[1]{{\fontsize{36pt}{1em}\headerfontlight\color{darkgray} #1}}
 \newcommand*{\lastnamestyle}[1]{{\fontsize{36pt}{1em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerinfostyle}[1]{\fontsize{10pt}{1em}\headerfont\color{text} #1}
+\newcommand*{\headertypestyle}[1]{\fontsize{10pt}{1em}\bodyfont\scshape\color{awesome} #1}
 
 \newcommand*{\sectionstyle}[1]{{\fontsize{20pt}{1em}\bodyfont\bfseries\scshape\color{text} #1}}
 \newcommand*{\sidesectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\scshape\color{text} #1}}
@@ -286,15 +287,17 @@
   \end{tabular}
   \hfill%
   \setlength{\tabcolsep}{.33334em}
-  \begin{tabular}[b]{cl@{}}
+  \begin{tabular}[b]{rr@{}}
     \headerinfostyle{%
       \ifthenelse{\isundefined{\@phone}}{}%
       {%
-        \faPhone{} & \headerinfostyle{\@phone}\\
+        % \faPhone{} & \headerinfostyle{\@phone}\\
+        \headertypestyle{Phone:} & \headerinfostyle{\@phone}\\
       }%
       \ifthenelse{\isundefined{\@github}}{}%
       {%
-        \faGithub{} & \headerinfostyle{\href{https://github.com/\@github}{\@github}}\\
+        % \faGithub{} & \headerinfostyle{\href{https://github.com/\@github}{\@github}}\\
+        \headertypestyle{GitHub:} & \headerinfostyle{\href{https://github.com/\@github}{\@github}}\\
       }%
       \ifthenelse{\isundefined{\@homepage}}{}%
       {%
@@ -302,7 +305,8 @@
       }%
       \ifthenelse{\isundefined{\@email}}{}%
       {%
-        \fontsize{3.5mm}{1em}{\faEnvelope{}} & \headerinfostyle{\href{mailto:\@email}{\@email}}%
+        % \fontsize{3.5mm}{1em}{\faEnvelope{}} & \headerinfostyle{\href{mailto:\@email}{\@email}}%
+        \headertypestyle{Email:} & \headerinfostyle{\href{mailto:\@email}{\@email}}%
       }%
     }
   \end{tabular}%
